@@ -1,55 +1,59 @@
 import java.util.Scanner;
-import java.util.Stack;
-class Postfixeval 
-{
-	public void Postfixeval(String s) 
-	    {  
-			String str[] = s.split(" ");
-			int n = 0, l = str.length;
-			Stack<Integer> stack = new Stack<>();
-			for (int i = 0; i < l; i++) 
-			{
-				try 
-				{
-					n = Integer.parseInt(str[i]);
-					stack.push(n);
-				} 
-				catch (NumberFormatException e) 
-				{
-					int v1 = stack.pop();
-					int v2 = stack.pop();
-					switch (str[i].charAt(0)) 
-					{
-						case '+':
-							n = v1 + v2;
-							break;
-						case '-':
-							n = v2 - v1;
-							break;
-						case '*':
-							n = v1 * v2;
-							break;
-						case '/':
-							n = v2 / v1;
-							break;
+import java.util.Stack; 
 
-					}
-					stack.push(n);
-				}
-			}
-		System.out.println(stack.pop());
-	}
-}
-public class Solution
-{
-	public static void main(String[] args) 
-	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter String");
-		String s=sc.nextLine();		
-		Postfixeval p=new Postfixeval();
-		p.Postfixeval(s);
-	 } 
-
-}
-
+public class Solution  
+{ 
+    // Method to evaluate value of a postfix expression 
+    static int evaluatePostfix(String exp) 
+    { 
+        //create a stack 
+        Stack<Integer> stack=new Stack<Integer>(); 
+          
+        // Scan all characters one by one 
+        for(int i=0;i<exp.length();i++) 
+        { 
+            char c=exp.charAt(i); 
+              
+            // If the scanned character is an operand (number here), 
+            // push it to the stack. 
+            if(Character.isDigit(c)) 
+            stack.push(c - '0'); 
+              
+            //  If the scanned character is an operator, pop two 
+            // elements from stack apply the operator 
+            else
+            { 
+                int val1 = stack.pop(); 
+                int val2 = stack.pop(); 
+                  
+                switch(c) 
+                { 
+                    case '+': 
+                    stack.push(val2+val1); 
+                    break; 
+                      
+                    case '-': 
+                    stack.push(val2- val1); 
+                    break; 
+                      
+                    case '/': 
+                    stack.push(val2/val1); 
+                    break; 
+                      
+                    case '*': 
+                    stack.push(val2*val1); 
+                    break; 
+              } 
+            } 
+        } 
+        return stack.pop();     
+    } 
+      
+    public static void main(String[] args)  
+    { 
+    	Scanner sc=new Scanner(System.in);
+    	System.out.println("Enter the string");
+        String exp=sc.next(); 
+        System.out.println(evaluatePostfix(exp)); 
+    } 
+} 
