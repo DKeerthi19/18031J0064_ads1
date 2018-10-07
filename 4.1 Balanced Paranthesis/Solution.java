@@ -39,7 +39,7 @@ class Stack
 		N=0;
 	}
 }
-class Parenthesis
+public class Solution
 {
 	public static void main(String args[])
 	{
