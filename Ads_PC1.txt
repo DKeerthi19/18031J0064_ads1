@@ -1,0 +1,54 @@
+1. What does the following code fragment print when N is 50 ?
+Ans: 0
+O(LogN)
+
+2. Give the output printed by Queue for the input at the end of all operations
+If “-” perform dequeue else enqueue each word.
+Playing Cricket - is - a hobby - - of - - mentor - deepak
+Step1:
+	Playing
+	Cricket
+Step2:
+	Playing
+Step3:
+	Playing 
+	is
+Step4:
+	Playing
+Step5:
+	Playing 
+	a
+	hobby
+Step6:
+	Playing
+Step7:
+	Playing
+	of
+Step8:
+	Mentor
+Step9:
+	Deepak
+
+3. Suppose that a client performs an intermixed sequence of (stack) push and pop operations. The push operations put the integers 0 through 9 in order onto the stack; the pop operations 
+print out the return values. Which of the following sequence(s) could not occur?
+Note: For answer write the options in order separated with comma and space eg: a, b, d 
+a. 5 4 3 1 2 0 9 8 7 6
+b. 0 9 8 7 6 5 4 3 2 1
+c. 0 1 2 3 4 5 6 7 8 9
+d. 1 3 5 7 9 2 4 6 8 0
+e. 1 5 0 2 3 4 6 7 8 9
+Ans:
+   a,d,e
+4.
+5.{[]()} If you use stacks for checking parentheses balanced or not ? After each iteration, Print the size of the stack
+Ans:1 2 1 2 1 0
+6.
+Ans:O(N*LogN)
+7.
+Ans:O(LogN)
+8.
+Ans:O(N)
+9.
+Ans:O(N^2)
+10.Give the number of components remain at the end of Quick Find Algorithm for the following union operations
+Ans:1
