@@ -3,7 +3,9 @@ import java.util.Scanner;
 class Team
 {
 	String name;
-	int wins,loses,draws;
+	int wins;
+	int loses;
+	int draws;
 	public Team(String name,int wins,int loses,int draws)
 	{
 		this.name=name;
@@ -16,7 +18,7 @@ class Team
 class SelectionSort 
 { 
 	int count = 0;
-    void sort(Team a[]) 
+    void Selectionsort(Team a[]) 
     { 
     	int i=0;
         while(a[i]!=null)
@@ -72,24 +74,24 @@ public class Solution {
 	{
 		Scanner sc = new Scanner(System.in);
 		int i=0;
-		Team[] k= new Team[10];
+		Team[] t= new Team[10];
 		while(sc.hasNext())
 		{
 		String team = sc.nextLine();
 		if(team!=null)
 		{
-		String[] t= team.split(",");
-		String name= t[0];
-		int wins= Integer.parseInt(t[1]);
-		int loses= Integer.parseInt(t[2]);
-		int draws= Integer.parseInt(t[3]);
+		String[] ts= team.split(",");
+		String name= ts[0];
+		int wins= Integer.parseInt(ts[1]);
+		int loses= Integer.parseInt(ts[2]);
+		int draws= Integer.parseInt(ts[3]);
 		
-		k[i]=new Team(name,wins,loses,draws);
+		t[i]=new Team(name,wins,loses,draws);
 		i++;
 		}
 		}
 		SelectionSort ss =new SelectionSort();
-		ss.sort(k);
-		ss.printArray(k);
+		ss.Selectionsort(t);
+		ss.printArray(t);
 	}
 }
