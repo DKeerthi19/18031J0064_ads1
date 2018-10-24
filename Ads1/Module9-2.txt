@@ -1,0 +1,24 @@
+Learning by doing-2
+
+E A S Y Q U E S T  I  O N
+
+1  2  3  4  5  6  7  8  9  10  11  12
+E  A  S  Y  Q  U  E  S  T   I   O  N
+
+1 2  3 4  5 6 	7 8  9 10  11 12
+E A  S Y  Q U 	E S  T  I   O  N
+
+1 2  3 4  5 6 	7 8  9 10  11 12
+A E  S Y  Q U 	E S  I  T   N  O
+
+1 2 3 4  5 6 7 8  9 10 11 12
+A E S Y  Q U E S  I  T  N  O
+
+1 2 3 4  5 6 7 8  9 10 11 12
+A E S Y  E Q S U  I  N  O  T
+
+1 2 3 4 5 6 7 8  9 10 11 12
+A E E Q S S U Y  I  N  O  T
+
+1 2 3 4 5 6 7 8 9 10 11 12
+A E E I N O Q S S  T  U  Y
