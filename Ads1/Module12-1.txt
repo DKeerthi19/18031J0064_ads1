@@ -1,0 +1,53 @@
+Learining by doing-1
+
+Suppose that the sequence P R I O * R * * I * T * Y * * * Q U E * * * U * E (where a letter means insert and 
+an asterisk means remove the maximum)is applied to an initially empty priority queue. 
+Give the sequence of values returned by remove the maximum operations.
+ 
+Step1: Insert P
+	P
+Step2:Insert R
+	P R
+Step3:Insert I
+	I P R
+Step4:Insert O
+	I O P R
+Step5:Remove max
+	I O P
+Step6:Insert R
+	I O P R
+Step7:Remove max
+	I O P
+Step8:Remove max
+	I O
+Step9:Insert I
+	I I O
+Step10:Remove max
+	I I
+Step11:Insert Y
+	I I Y
+Step12:Remove max
+	I I
+Step 13:Remove max
+	I
+Step 14:Remove max
+
+Step 15:Insert Q	
+	Q
+Step16:Insert U
+	Q U
+Step17:Insert E
+	E Q U
+Step18:Remove max
+	E Q
+Step19:Remove max
+	E
+Step 20:Remove max
+
+Step21:Insert U
+	U
+Step 22:Remove max
+
+Step23:Insert E	
+	E
+	
