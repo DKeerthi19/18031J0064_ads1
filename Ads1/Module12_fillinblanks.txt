@@ -29,6 +29,3 @@ Fill in the Blanks-3
 2) E and E are child nodes of A node
 
 3) I is the root node after  deleteMin() called 5 times
-
-
-s
